@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+{% load component_tags %}
+
+{% block content %}
+
+<div class="grid grid-cols-1 gap-4 lg:grid-cols-3 lg:gap-8">
+    <div class="rounded-lg  lg:col-span-2">
+
+        {% for key, artickel in artickel_data.items %}
+        
+            {% component 'artickel' title=artickel.title date=artickel.date category=artickel.category simple_content=artickel.simple_content %}{% endcomponent %}
+            
+        {% endfor %}
+    </div>
+    <div class="rounded-lg items-center">
+
+    </div>
+</div>
+
+{% endblock content %}

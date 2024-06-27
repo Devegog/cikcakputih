@@ -1,0 +1,37 @@
+<a href="#">
+    <article class="flex bg-white transition hover:bg-base-200 rounded-box
+    my-5">
+
+    <div class="hidden sm:block sm:basis-56">
+      <img
+        alt=""
+        src="https://images.unsplash.com/photo-1609557927087-f9cf8e88de18?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80"
+        class="aspect-square h-full w-full object-cover rounded-box p-3"
+      />
+    </div>
+  
+    <div class="flex flex-1 flex-col justify-between">
+      <div class="border-s border-gray-900/10 p-4 sm:border-l-transparent sm:p-6">
+        <div class="flex justify-between mb-1">
+            <div  class="font-bold text-xs text-madang-600 uppercase">{{category}}</div>
+            <div class="flex items-center gap-2" >
+                <label class="text-sm text-gray-400">{{ date }}</label>
+            </div>
+            
+        </div>
+        
+          <h3 class="font-bold uppercase text-gray-900">
+            {{ title }}
+          </h3>
+
+  
+        <p class="mt-2 line-clamp-3 text-sm/relaxed text-gray-700">
+          {{ simple_content }}
+        </p>
+        
+      </div>
+  
+    </div>
+
+  </article>
+</a>

@@ -1,0 +1,12 @@
+<div class="drawer-side">
+    <label for="sidemenu" aria-label="close sidebar" class="drawer-overlay"></label>
+    <ul class="menu bg-base-100 min-h-full w-80 p-4 rounded-l-lg capitalize">
+      {% load component_tags %}
+
+      {% for nama, url in link_data.items %}
+      {% component 'menuitem' link_url=url link_name=nama %}{% endcomponent %}
+      {% endfor %}
+
+
+    </ul>
+  </div>
